@@ -1,0 +1,14 @@
+<p>main A works!</p>
+
+<nav>
+    <a routerLink="child-a">Child A</a> - 
+    <a routerLink="child-b">Child B</a>
+    
+    <hr>
+
+    <a [routerLink]="['child-a']">Child A</a> -
+    <a routerLink="/child-b">Child B (not work)</a> - 
+    <a [routerLink]="['/child-b']">Child B (not work)</a>
+</nav>
+
+<router-outlet></router-outlet>
